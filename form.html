@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <link rel="stylesheet" href="/form.css">
   </head>
   <body>
-    <div>YASHAS FORM</div>
+    <div style="text-align: center; margin-bottom: 40px; font-weight: 900;">YASHAS FORM</div>
 
     <form action="/signup.html" target="_blank">
       <label for="fullname">Full Name: </label>
@@ -17,7 +17,7 @@
         autocomplete=""
         required
       />
-      <br />
+      <br /> 
       <label for="phonenumber">Phone Number: </label>
       <input
         type="number"
@@ -47,11 +47,12 @@
       <br />
       <div>
         <label>Gender:</label>
-        <input type="radio" id="male" checked name="gender" />
-        <label>Male</label>
+        <br>
+        <input style="display: inline;" type="radio" id="male" checked name="gender" />
+        <label style="display: inline;">Male</label>
 
-        <input type="radio" id="female" name="gender" />
-        <label>female</label>
+        <input style="display: inline;" type="radio" id="female" name="gender" />
+        <label style="display: inline;">female</label>
       </div>
       <br />
       <label>Date of Birth:</label>
@@ -89,7 +90,7 @@
       </div>
 
       <p>Your feedback:</p>
-      <textarea type="textbox" id="feedback" rows="5" cols="20"></textarea>
+      <textarea style="border-radius: 8px;" type="textbox" id="feedback" rows="8" cols="40"></textarea>
       <br /><br />
       <input type="checkbox" name="label" required />
       <label
@@ -102,7 +103,7 @@
 
 
 
-    <input type="range">
-    <input type="file">
+    <!-- <input type="range">
+    <input type="file"> -->
   </body>
 </html>

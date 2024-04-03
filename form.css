@@ -1,0 +1,21 @@
+body{
+    background-color: aqua;
+    text-transform: capitalize;
+}
+form{
+    font-weight: 700;
+    margin-left: 300px;
+    text-transform: capitalize;
+}
+
+label{
+    display: block;
+    text-transform: capitalize;
+}
+
+input{
+    display: block;
+    border-radius: 8px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+}
