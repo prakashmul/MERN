@@ -35,7 +35,9 @@
     padding: 20px;
 }
 
-/* .right-child-1{
+
+/* 
+.right-child-1{
     background-color: burlywood;
     display: grid;
     grid-template-rows: auto auto auto auto auto;
@@ -88,7 +90,7 @@
 }
 .fffr1{
     background-color: cadetblue;
-} */
+}  */
 
 /* .right-child-1{
     background-color: burlywood;
@@ -166,8 +168,9 @@
     gap: 20px;
     padding: 20px;
 }
+
 .rc{
     background-color: darkgoldenrod;
-}
+} 
 
 
