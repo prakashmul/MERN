@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+[type="text"]:focus,
+[type="password"]:focus,
+[type="number"]:focus,
+[type="checkbox"]:focus,
+[type="submit"]:focus,
+[type="email"]:focus{
+    border: 2px solid black !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: white; /* Set background color for the checkbox */
+    border: 1px solid black; /* Set border color for the checkbox */
+    border-radius: 3px; /* Optional: Add border radius for rounded corners */
+}
+
+/* Style the custom checkbox when it's checked */
+input[type="checkbox"]:checked {
+    background-color: black; /* Change background color when checked */
+    border: 1px solid black; /* Change border color when checked */
+}
