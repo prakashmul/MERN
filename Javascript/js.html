@@ -12,39 +12,75 @@
   </head>
 
   <style>
-    .demo{
-        background-color: black;
+    .demo {
+      background-color: black;
     }
   </style>
   <body>
     <h1 id="js">Hello World</h1>
 
     <div class="example">
-        <p>This is a paragraph</p>
+      <p>This is a paragraph</p>
     </div>
-    <br>
+    <br />
     <div class="example color">
-        <p>This is a paragraph</p>
+      <p>This is a paragraph</p>
     </div>
-    <br>
+    <br />
     <div class="example color">
-        <p>This is a paragraph</p>
+      <p>This is a paragraph</p>
     </div>
 
-    <button onclick={addNumber()}>
-        Add
-    </button>
+    <button onclick="{addNumber()}">Add</button>
 
     <div class="flex items-center gap-2 w-full">
-        <div class="flex border border-black gap-5 px-5 py-2 rounded-lg text-xl">
-            <button id="dec" class="disabled:cursor-not-allowed font-bold" onclick={decreaseProduct()}>-</button>
-            <span class="px-4" id="quantity">1</span>
-            <button onclick="{increaseProduct()}">+</button>
-        </div>
+      <div class="flex border border-black gap-5 px-5 py-2 rounded-lg text-xl">
+        <button
+          id="dec"
+          class="disabled:cursor-not-allowed font-bold"
+          onclick="{decreaseProduct()}"
+        >
+          -
+        </button>
+        <span class="px-4" id="quantity">1</span>
+        <button onclick="{increaseProduct()}">+</button>
+      </div>
     </div>
 
+    <script>
+      const classes = document.getElementsByClassName("example");
+      classes[2].style.background = "red";
+      classes[2].style.color = "white";
+      classes[2].innerHTML = "This coming from JS";
 
-   <script src="index.js"></script>
+      function addNumber() {
+        setTimeout(() => {
+          window.alert("This is a alert message");
+        }, 1000);
+
+        document.getElementById("js").innerHTML = "Hello Number";
+      }
+
+      //Quantity
+      let Quantity = (document.getElementById("quantity").innerHTML = 0);
+      function decreaseProduct() {
+        Quantity--;
+        if (Quantity <= 0) {
+          const res = (document.getElementById("dec").disabled = true);
+          window.alert("Quantity cannot be less than 0");
+        } else {
+          document.getElementById("quantity").innerHTML = Quantity;
+        }
+      }
+
+      function increaseProduct() {
+        Quantity++;
+        const res = (document.getElementById("dec").disabled = false);
+        document.getElementById("quantity").innerHTML = Quantity;
+      }
+    </script>
+
+    <script src="index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   </body>
 </html>
