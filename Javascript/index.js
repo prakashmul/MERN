@@ -68,11 +68,13 @@ const opr = x ** 3
 // logical operator
 // &&
 // ||
+
 if (x ?? y == 12) {
   console.log(true)
 } else {
   console.log(false)
 }
+
 // console.log(x || y == 12)
 
 (x = y)
@@ -211,3 +213,15 @@ do {
   console.log(k, text)
 }
 while (k < 10);
+
+
+
+
+
+
+
+
+
+
+
+
